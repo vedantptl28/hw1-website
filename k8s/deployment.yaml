@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hw1-website
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hw1-website
+  template:
+    metadata:
+      labels:
+        app: hw1-website
+    spec:
+      containers:
+        - name: web
+          image: ohhdude14/hw1-website:1.0
+          ports:
+            - containerPort: 80
+          readinessProbe:
+            httpGet:
+              path: /index.html
+              port: 80
+            initialDelaySeconds: 3
+            periodSeconds: 5

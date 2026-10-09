@@ -1,0 +1,27 @@
+/* Author: Vedant Patel | Purpose: Provides the shared Bootstrap-compatible visual style for all SWE 645 Homework 1 pages. */
+
+:root { --gmu-green: #005239; --gmu-gold: #ffcc33; --ink: #15211d; --mist: #f3f6f3; }
+body { color: var(--ink); background: var(--mist); font-family: Arial, Helvetica, sans-serif; }
+.site-nav { background: #10241d; box-shadow: 0 2px 12px rgba(0,0,0,.14); }
+.site-nav .nav-link { color: rgba(255,255,255,.8); }
+.site-nav .nav-link:hover, .site-nav .nav-link.active { color: var(--gmu-gold); }
+.hero-section { background: linear-gradient(135deg, #e4f0e8 0%, #f6f8f5 63%, #fff4ce 100%); min-height: 510px; }
+h1 { font-weight: 750; letter-spacing: -.03em; font-size: clamp(2.35rem, 5vw, 4.25rem); }
+h2 { font-weight: 700; }
+.eyebrow { color: var(--gmu-green); font-size: .78rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.btn-gmu { background: var(--gmu-green); border-color: var(--gmu-green); color: #fff; font-weight: 700; }
+.btn-gmu:hover, .btn-gmu:focus { background: #003d2b; border-color: #003d2b; color: #fff; }
+.hero-image { filter: drop-shadow(0 16px 20px rgba(8, 60, 39, .18)); }
+.narrow-content { max-width: 780px; }
+.site-footer { background: #10241d; color: #fff; }
+.survey-page { background: linear-gradient(180deg, #e7f0e9 0, var(--mist) 240px); min-height: calc(100vh - 120px); }
+.survey-intro { max-width: 760px; }
+.survey-intro h1 { font-size: clamp(2rem, 4vw, 3.25rem); }
+.survey-card { background: #fff; border-radius: 16px; box-shadow: 0 15px 35px rgba(16, 36, 29, .12); padding: clamp(1.25rem, 4vw, 3rem); }
+.form-section-title { font-size: 1.2rem; margin-bottom: 1rem; }
+fieldset { border: 0; padding: 0; }
+.option-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); gap: .7rem; }
+.required-star { color: #b42318; }
+.survey-card hr { margin: 2rem 0; border-color: #d7e2da; }
+.error-page { min-height: 100vh; display: grid; place-items: center; background: linear-gradient(135deg, #e4f0e8, #fff4ce); }
+.error-page main { background: #fff; border-radius: 16px; box-shadow: 0 15px 35px rgba(16,36,29,.12); max-width: 600px; }
